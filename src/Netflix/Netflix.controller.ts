@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from "@nestjs/common";
 import { NetflixService } from './Netflix.service'
-import { CreateNetflixDto } from 'src/Dto/create-netflix.dto';
+import { CreateNetflixDto } from 'src/dto/Netflix/create-netflix.dto';
 import { Get, Query } from "@nestjs/common/decorators";
 @Controller('Netflix')
 export class NetflixController {

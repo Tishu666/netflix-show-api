@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Netflix } from 'src/Schemas/Netflix.schema';
 import { Model } from 'mongoose';
-import { CreateNetflixDto } from 'src/Dto/create-netflix.dto';
+import { CreateNetflixDto } from 'src/dto/Netflix/create-netflix.dto';
 @Injectable()
 export class NetflixService {
     constructor(@InjectModel(Netflix.name) private NetflixModel: Model<Netflix>) { }
